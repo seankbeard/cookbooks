@@ -1,3 +1,3 @@
-I, [2019-03-11T14:06:35.843194 #20556]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
-I, [2019-03-11T14:06:46.305474 #20556]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1604>...
-I, [2019-03-11T14:06:47.838805 #20556]  INFO -- Kitchen: -----> Kitchen is finished. (0m11.99s)
+I, [2019-03-11T15:45:47.844401 #24520]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
+I, [2019-03-11T15:45:58.345168 #24520]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1604>...
+I, [2019-03-11T15:46:00.098352 #24520]  INFO -- Kitchen: -----> Kitchen is finished. (0m12.25s)

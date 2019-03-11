@@ -28,4 +28,6 @@ suites:
       policyfile: policies/apache.rb
     verifier:
       inspec_tests:
+        #- supermarket://dev-sec/linux-baseline
+        - ../linux-baseline
     attributes:
