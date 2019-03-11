@@ -1,0 +1,29 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: test-kitchen
+  region: ap-southeast-2
+  availability_zone: a
+  subnet_id: subnet-07dd6e5d93c13e735
+  instance_type: t1.micro
+  image_id: ami-001dae151248753a2
+  security_group_ids: ["sg-0cf0266d3c748f38d"]
+  retryable_tries: 120
+
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+transport:
+  ssh_key: c:\customers\businessapps\keys\test-kitchen.pem
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
+    provisioner:
+      policyfile: policies/audit.rb
+    attributes:

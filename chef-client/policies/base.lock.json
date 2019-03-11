@@ -1,0 +1,98 @@
+{
+  "revision_id": "5b8727bd9f8310bcc6fd78268a9dcbc2d515fb5c7817f3cc8998628808c25437",
+  "name": "base",
+  "run_list": [
+    "recipe[chef-client::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "chef-client": {
+      "version": "11.0.6",
+      "identifier": "78f49308ea9dcf5ad7fdca65524e8563652aa0cb",
+      "dotted_decimal_identifier": "34045909552242127.25570232926294606.146661945549003",
+      "source": "..",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/seankbeard/cookbooks",
+        "revision": "1eed7c4707254c420d8cd406949d862c5e205750",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": ".."
+      }
+    },
+    "cron": {
+      "version": "6.2.1",
+      "identifier": "08676b5cc33658430ce04cecc16dd07200380e83",
+      "dotted_decimal_identifier": "2365510629144152.18872980942405997.229188048522883",
+      "cache_key": "cron-6.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.2.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/cron/versions/6.2.1/download",
+        "version": "6.2.1"
+      }
+    },
+    "logrotate": {
+      "version": "2.2.0",
+      "identifier": "53e09234a4f73cc13f46d833d2e5075cafddfaa8",
+      "dotted_decimal_identifier": "23609341620057916.54394244012692197.8094668946088",
+      "cache_key": "logrotate-2.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.0/download",
+        "version": "2.2.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "chef_client": {
+      "interval": "200",
+      "splay": "30"
+    }
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "chef-client",
+        ">= 0.0.0"
+      ],
+      [
+        "cron",
+        "= 6.2.1"
+      ],
+      [
+        "logrotate",
+        "= 2.2.0"
+      ]
+    ],
+    "dependencies": {
+      "chef-client (11.0.6)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
+      "cron (6.2.1)": [
+
+      ],
+      "logrotate (2.2.0)": [
+
+      ]
+    }
+  }
+}

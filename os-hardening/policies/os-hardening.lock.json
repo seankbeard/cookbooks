@@ -1,0 +1,84 @@
+{
+  "revision_id": "f8f07a60948911dd925150a584a5d7eaff3797c1fd2ca50df99dcdb62923914b",
+  "name": "os-hardening",
+  "run_list": [
+    "recipe[os-hardening::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "ohai": {
+      "version": "5.2.5",
+      "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
+      "dotted_decimal_identifier": "68560795440104762.69986038791417806.74714224415079",
+      "cache_key": "ohai-5.2.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+        "version": "5.2.5"
+      }
+    },
+    "os-hardening": {
+      "version": "3.2.1",
+      "identifier": "4243894673d933f541a9946dbef3cc43bce496d6",
+      "dotted_decimal_identifier": "18651605334481203.69033565889609459.224591303972566",
+      "cache_key": "os-hardening-3.2.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/os-hardening/versions/3.2.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/os-hardening/versions/3.2.1/download",
+        "version": "3.2.1"
+      }
+    },
+    "sysctl": {
+      "version": "1.0.5",
+      "identifier": "3d2a23146a32c45b9a3635a51b7814c9528f24d5",
+      "dotted_decimal_identifier": "17216303734076100.25783780499594104.22854906094805",
+      "cache_key": "sysctl-1.0.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
+        "version": "1.0.5"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ohai",
+        "= 5.2.5"
+      ],
+      [
+        "os-hardening",
+        "= 3.2.1"
+      ],
+      [
+        "sysctl",
+        "= 1.0.5"
+      ]
+    ],
+    "dependencies": {
+      "ohai (5.2.5)": [
+
+      ],
+      "os-hardening (3.2.1)": [
+        [
+          "sysctl",
+          "~> 1.0"
+        ]
+      ],
+      "sysctl (1.0.5)": [
+        [
+          "ohai",
+          ">= 5.0.0"
+        ]
+      ]
+    }
+  }
+}
