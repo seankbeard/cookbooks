@@ -1,9 +1,9 @@
 {
-  "revision_id": "81200b7e5906165fa13e25a65fcf5d7fc85b4470ba46d9bd5259fb0b4072ec03",
+  "revision_id": "ce2092afa731157ebdbc0f21252ca0013ab5c931170a1e5c97c015728fa2b2a2",
   "name": "webserver",
   "run_list": [
     "recipe[chef-client::default]",
-    "recipe[os-hardening::default]"
+    "recipe[apache::default]"
   ],
   "included_policy_locks": [
     {
@@ -17,14 +17,14 @@
   "cookbook_locks": {
     "apache": {
       "version": "0.1.0",
-      "identifier": "8e2a84a45e243b1cb24aa47c239bd35c9e4f0f79",
-      "dotted_decimal_identifier": "40016195874595899.8077333004821403.232394746433401",
+      "identifier": "caa2fe9c0c050b672296dce205929cf981e0150f",
+      "dotted_decimal_identifier": "57037159718978827.29029953947436434.172595439736079",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/seankbeard/cookbooks",
-        "revision": "40201096c2cc0784b106ddcd85b502342e95caa6",
+        "revision": "8b25815acc4d2eb81ba950468a29793fefe5b911",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -45,7 +45,7 @@
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/seankbeard/cookbooks",
-        "revision": "40201096c2cc0784b106ddcd85b502342e95caa6",
+        "revision": "8b25815acc4d2eb81ba950468a29793fefe5b911",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -78,39 +78,6 @@
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.0/download",
         "version": "2.2.0"
       }
-    },
-    "ohai": {
-      "version": "5.2.5",
-      "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
-      "dotted_decimal_identifier": "68560795440104762.69986038791417806.74714224415079",
-      "cache_key": "ohai-5.2.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
-        "version": "5.2.5"
-      }
-    },
-    "os-hardening": {
-      "version": "3.2.1",
-      "identifier": "4243894673d933f541a9946dbef3cc43bce496d6",
-      "dotted_decimal_identifier": "18651605334481203.69033565889609459.224591303972566",
-      "cache_key": "os-hardening-3.2.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/os-hardening/versions/3.2.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/os-hardening/versions/3.2.1/download",
-        "version": "3.2.1"
-      }
-    },
-    "sysctl": {
-      "version": "1.0.5",
-      "identifier": "3d2a23146a32c45b9a3635a51b7814c9528f24d5",
-      "dotted_decimal_identifier": "17216303734076100.25783780499594104.22854906094805",
-      "cache_key": "sysctl-1.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
-        "version": "1.0.5"
-      }
     }
   },
   "default_attributes": {
@@ -139,18 +106,6 @@
       [
         "logrotate",
         "= 2.2.0"
-      ],
-      [
-        "ohai",
-        "= 5.2.5"
-      ],
-      [
-        "os-hardening",
-        "= 3.2.1"
-      ],
-      [
-        "sysctl",
-        "= 1.0.5"
       ]
     ],
     "dependencies": {
@@ -172,21 +127,6 @@
       ],
       "logrotate (2.2.0)": [
 
-      ],
-      "ohai (5.2.5)": [
-
-      ],
-      "os-hardening (3.2.1)": [
-        [
-          "sysctl",
-          "~> 1.0"
-        ]
-      ],
-      "sysctl (1.0.5)": [
-        [
-          "ohai",
-          ">= 5.0.0"
-        ]
       ]
     }
   }

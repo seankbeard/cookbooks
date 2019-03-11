@@ -1,5 +1,5 @@
 {
-  "revision_id": "5b8727bd9f8310bcc6fd78268a9dcbc2d515fb5c7817f3cc8998628808c25437",
+  "revision_id": "db37645fc9b6ea2262b0662ba33b707edf8f0687a4de9118f55d3db3d6bb70e9",
   "name": "base",
   "run_list": [
     "recipe[chef-client::default]"
@@ -10,14 +10,14 @@
   "cookbook_locks": {
     "chef-client": {
       "version": "11.0.6",
-      "identifier": "78f49308ea9dcf5ad7fdca65524e8563652aa0cb",
-      "dotted_decimal_identifier": "34045909552242127.25570232926294606.146661945549003",
+      "identifier": "e2fc025249be7a4bd7fdf40e120e21a47ce98a2c",
+      "dotted_decimal_identifier": "63890431637307002.21348108974559758.36990354033196",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/seankbeard/cookbooks",
-        "revision": "1eed7c4707254c420d8cd406949d862c5e205750",
+        "revision": "8b25815acc4d2eb81ba950468a29793fefe5b911",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
