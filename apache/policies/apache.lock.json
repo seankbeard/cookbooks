@@ -1,5 +1,5 @@
 {
-  "revision_id": "71db9aa72f41e8c735d471141020b07705da51d8d5dbe5bd7dc43014d4bb7814",
+  "revision_id": "fcbff482267092266a544c5c862a9604f68a49ac60ee4c73d2d85c5362d64474",
   "name": "webserver",
   "run_list": [
     "recipe[chef-client::default]",
@@ -17,15 +17,15 @@
   "cookbook_locks": {
     "apache": {
       "version": "0.1.0",
-      "identifier": "753fbaf94ba0fa16adbbdcd5eae27a369cbb5ff3",
-      "dotted_decimal_identifier": "33002644554096890.6383471863130850.134374976348147",
+      "identifier": "326ec937a770f59cbd32e56127b9b2485cf56ed3",
+      "dotted_decimal_identifier": "14195559336734965.44118122661226425.196023866978003",
       "source": "..",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/seankbeard/cookbooks",
-        "revision": "92a72e5aa879ff3ec68838bd6f5a02a35081378f",
-        "working_tree_clean": false,
+        "revision": "b68efe9178f5a8788b5fcaf287886268c19d9340",
+        "working_tree_clean": true,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/master",
@@ -45,8 +45,8 @@
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/seankbeard/cookbooks",
-        "revision": "92a72e5aa879ff3ec68838bd6f5a02a35081378f",
-        "working_tree_clean": false,
+        "revision": "b68efe9178f5a8788b5fcaf287886268c19d9340",
+        "working_tree_clean": true,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/master",
