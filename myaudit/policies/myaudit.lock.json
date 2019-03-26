@@ -1,0 +1,73 @@
+{
+  "revision_id": "536e1aada791eeb4fd854e343e19577767c7a05b790884bb527625b6900460e6",
+  "name": "myaudit",
+  "run_list": [
+    "recipe[myaudit::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "audit": {
+      "version": "7.4.1",
+      "identifier": "dfac1bbe31ec390bbb83cccfe34ce1f6aa9d99c0",
+      "dotted_decimal_identifier": "62958154961513529.3302399495103308.248449540659648",
+      "cache_key": "audit-7.4.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/7.4.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/7.4.1/download",
+        "version": "7.4.1"
+      }
+    },
+    "myaudit": {
+      "version": "0.1.0",
+      "identifier": "752c398a4aa520d32bee230525ae3ca67531b81f",
+      "dotted_decimal_identifier": "32981197920052512.59439521875699118.66685628430367",
+      "source": "..",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/seankbeard/cookbooks",
+        "revision": "2e2b9840247da03d3cf723e06644f5bfa6a2f817",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": ".."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "audit",
+        "= 7.4.1"
+      ],
+      [
+        "myaudit",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "audit (7.4.1)": [
+
+      ],
+      "myaudit (0.1.0)": [
+        [
+          "audit",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}
