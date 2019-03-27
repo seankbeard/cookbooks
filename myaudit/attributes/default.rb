@@ -1,12 +1,9 @@
-default['audit']['reporter'] = 'chef-server-automate'
+default['audit']['reporter'] = 'chef-automate'
+default['audit']['fetcher'] = 'chef-automate'
 
-case node['os']
-when 'linux'
-  default['audit']['profiles']['linux-baseline'] = {
-      'compliance': 'admin/linux-baseline'
+default['audit']['profiles'].push(
+  {
+    'name': 'linux-basline',
+    'git': 'https://github.com/dev-sec/linux-baseline.git'
   }
-when 'windows'
-  default['audit']['profiles']['windows-bseline'] = {
-      'compliance': 'admin/windows-baseline'
-  }
-end
+)
