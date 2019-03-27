@@ -1,4 +1,4 @@
-default['audit']['fetcher'] = 'chef-server-automate'
+default['audit']['fetcher'] = 'chef-server'
 default['audit']['reporter'] = 'chef-server-automate'
 
 case node['os']
