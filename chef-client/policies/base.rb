@@ -11,9 +11,11 @@ default_source :supermarket
 
 # Specify a custom source for a cookbook:
 cookbook 'chef-client', path: '../'
+cookbook 'myaudit', path: '../'
 
 # # run_list: chef-client will run these recipes in the order specified.
 run_list 'chef-client'
+run_list 'myaudit::default'
 
 # Override the Chef Client cookbook with the following attributes
 override['chef_client']['interval']    = '200'
