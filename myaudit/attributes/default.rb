@@ -24,4 +24,11 @@ default['audit']['profiles'] =
         compliance: 'admin/linux-baseline',
       },
     ]
+  when 'windows'
+    default['audit']['profiles'] = [
+      {
+        name: 'DevSec Windows Security Baseline',
+        compliance: 'adminwindows-baseline',
+      },
+    ]
   end
