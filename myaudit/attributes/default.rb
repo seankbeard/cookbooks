@@ -16,13 +16,6 @@ default['audit']['profiles'] =
         compliance: 'admin/linux-baseline',
       },
     ]
-  when 'windows'
-    default['audit']['profiles'] = [
-      {
-        name: 'DevSec Windows Security Baseline',
-        compliance: 'workstation-1/windows-baseline',
-      },
-    ]
   when 'redhat'
     default['audit']['profiles'] = [
       {
