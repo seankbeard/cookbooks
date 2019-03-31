@@ -28,7 +28,7 @@ default['audit']['profiles'] =
     default['audit']['profiles'] = [
       {
         name: 'DevSec Windows Security Baseline',
-        compliance: 'adminwindows-baseline',
+        compliance: 'admin/windows-baseline',
       },
     ]
   end
