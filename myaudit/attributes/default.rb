@@ -1,5 +1,5 @@
-##default['audit']['fetcher'] = 'chef-automate'
-##default['audit']['reporter'] = 'chef-automate'
+default['audit']['fetcher'] = 'chef-automate'
+default['audit']['reporter'] = 'chef-automate'
 ##default['audit']['token'] = 'pnIT28d_Xp47A1MZt9m5Aow5rdk='
 default['audit']['profiles'] =
   case node['platform']
