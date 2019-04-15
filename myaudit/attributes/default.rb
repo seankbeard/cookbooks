@@ -31,5 +31,9 @@ default['audit']['profiles'] =
         name: 'DevSec Windows Security Baseline',
         compliance: 'admin/windows-baseline',
       },
+      {
+        name: 'DevSec Windows Patch Baseline',
+        compliance: 'admin/windows-patch-baseline',
+      },
     ]
   end
