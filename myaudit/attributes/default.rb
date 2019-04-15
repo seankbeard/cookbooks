@@ -1,7 +1,7 @@
 # default['audit']['fetcher'] = 'chef-automate'
 # default['audit']['reporter'] = 'chef-automate'
+default['audit']['fetcher'] = 'chef-server-automate'
 default['audit']['reporter'] = 'chef-server-automate'
-default['audit']['fetcher'] = 'chef-server'
 default['audit']['profiles'] =
   case node['platform']
   when 'centos'
