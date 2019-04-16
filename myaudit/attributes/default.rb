@@ -1,5 +1,3 @@
-# default['audit']['fetcher'] = 'chef-automate'
-# default['audit']['reporter'] = 'chef-automate'
 default['audit']['fetcher'] = 'chef-server-automate'
 default['audit']['reporter'] = 'chef-server-automate'
 default['audit']['profiles'] =
@@ -10,6 +8,10 @@ default['audit']['profiles'] =
         name: 'DevSec Linux Security Baseline',
         compliance: 'admin/linux-baseline',
       },
+      {
+        name: 'DevSec Linux Patch Benchmark',
+        compliance: 'admin/linux-patch-baseline',
+      },
     ]
   when 'ubuntu'
     default['audit']['profiles'] = [
@@ -17,12 +19,20 @@ default['audit']['profiles'] =
         name: 'DevSec Linux Security Baseline',
         compliance: 'admin/linux-baseline',
       },
+      {
+        name: 'DevSec Linux Patch Benchmark',
+        compliance: 'admin/linux-patch-baseline',
+      },
     ]
   when 'redhat'
     default['audit']['profiles'] = [
       {
         name: 'DevSec Linux Security Baseline',
         compliance: 'admin/linux-baseline',
+      },
+      {
+        name: 'DevSec Linux Patch Benchmark',
+        compliance: 'admin/linux-patch-baseline',
       },
     ]
   when 'windows'
