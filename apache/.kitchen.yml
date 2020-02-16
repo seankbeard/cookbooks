@@ -17,7 +17,7 @@ verifier:
   name: inspec
 
 transport:
-  ssh_key: c:\customers\businessapps\keys\test-kitchen.pem
+  ssh_key: ~/keys/sean-test.pem
 
 platforms:
   - name: ubuntu-16.04
