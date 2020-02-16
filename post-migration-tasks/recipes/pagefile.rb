@@ -5,5 +5,5 @@ end
 
 windows_pagefile 'create the pagefile' do
     path 'D:\pagefile.sys'
-    automatic_managed true
+    system_managed true
 end
